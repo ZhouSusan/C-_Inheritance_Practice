@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Person
 {
-    internal class Class1
+    class Person
     {
+        public String FirstName { get; set; }
+        public String LastName { get; set; }
+
+        public String GetFullName()
+        {
+            return FirstName + " " + LastName;
+        }
     }
 }
